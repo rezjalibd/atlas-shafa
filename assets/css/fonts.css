@@ -1,0 +1,69 @@
+/* Font Face Definitions: IRANSansXFaNum */
+@font-face {
+  font-family: 'IRANSansXFaNum';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/IRANSansXFaNum-Regular.woff2') format('woff2'),
+       url('../fonts/IRANSansXFaNum-Regular.woff') format('woff'),
+       url('../fonts/IRANSansXFaNum-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IRANSansXFaNum';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/IRANSansXFaNum-Medium.woff2') format('woff2'),
+       url('../fonts/IRANSansXFaNum-Medium.woff') format('woff'),
+       url('../fonts/IRANSansXFaNum-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IRANSansXFaNum';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/IRANSansXFaNum-Bold.woff2') format('woff2'),
+       url('../fonts/IRANSansXFaNum-Bold.woff') format('woff'),
+       url('../fonts/IRANSansXFaNum-Bold.ttf') format('truetype');
+}
+
+/* Font Face Definitions: On */
+@font-face {
+  font-family: 'On';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/OnNormal.woff2') format('woff2'),
+       url('../fonts/OnNormal.woff') format('woff'),
+       url('../fonts/OnNormal.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'On';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/OnMedium.woff2') format('woff2'),
+       url('../fonts/OnMedium.woff') format('woff'),
+       url('../fonts/OnMedium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'On';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/OnSemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'On';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/OnBold.woff2') format('woff2'),
+       url('../fonts/OnBold.woff') format('woff'),
+       url('../fonts/OnBold.ttf') format('truetype');
+}

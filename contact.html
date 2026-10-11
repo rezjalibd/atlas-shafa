@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تماس با ما و دریافت نوبت | اطلس شفاء آماتیس</title>
+  <link rel="icon" type="image/webp" href="assets/logos/fava.webp">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/fontawesome/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/datepicker/persian-datepicker.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="nav-brand">
+          <img src="assets/logos/logow.webp" alt="لوگو اطلس شفاء آماتیس" class="brand-logo logo-light">
+          <img src="assets/logos/logod.webp" alt="لوگو اطلس شفاء آماتیس" class="brand-logo logo-dark">
+        </a>
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">صفحه اصلی</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">خدمات</a></li>
+            <li class="nav-item"><a href="products.html" class="nav-link">محصولات</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link active">تماس با ما</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <button id="btnThemeToggle" class="btn-icon"><i class="fas fa-moon"></i></button>
+          <button id="btnLangToggle" class="btn-icon">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ارتباط مستقیم</span>
+        <h1 class="section-title">درخواست مشاوره، نوبت‌دهی و ارتباط سازمانی</h1>
+        <p class="section-desc">پاسخگویی سریع توسط کارشناسان و مسئولان فنی واحدهای درمانی و صنعتی</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+        <!-- Contact Form with Persian Datepicker -->
+        <div class="card">
+          <h3 style="margin-bottom: 1.5rem; font-size: 1.25rem;">فرم ثبت درخواست یا استعلام</h3>
+          <form onsubmit="event.preventDefault(); alert('درخواست شما با موفقیت ثبت شد و کد رهگیری ارسال گردید.');">
+            <div style="margin-bottom: 1.25rem;">
+              <label style="display: block; font-size: 0.9rem; margin-bottom: 0.4rem; font-weight: 500;">نام و نام خانوادگی</label>
+              <input type="text" required placeholder="مثال: علی رضایی" style="width: 100%; padding: 0.75rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); background: var(--bg-surface-subtle); color: var(--text-main);">
+            </div>
+
+            <div style="margin-bottom: 1.25rem;">
+              <label style="display: block; font-size: 0.9rem; margin-bottom: 0.4rem; font-weight: 500;">شماره تماس همراه</label>
+              <input type="tel" required placeholder="۰۹۱۲..." style="width: 100%; padding: 0.75rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); background: var(--bg-surface-subtle); color: var(--text-main);">
+            </div>
+
+            <div style="margin-bottom: 1.25rem;">
+              <label style="display: block; font-size: 0.9rem; margin-bottom: 0.4rem; font-weight: 500;">واحد مربوطه</label>
+              <select style="width: 100%; padding: 0.75rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); background: var(--bg-surface-subtle); color: var(--text-main);">
+                <option>رادیولوژی فک و صورت (CBCT)</option>
+                <option>پلتفرم نرم‌افزاری ای‌مطب</option>
+                <option>تأمین تجهیزات و یونیت دندان‌پزشکی</option>
+                <option>همکاری سازمانی و کلینیک‌ها</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom: 1.25rem;">
+              <label style="display: block; font-size: 0.9rem; margin-bottom: 0.4rem; font-weight: 500;">تاریخ پیشنهادی حضور (تقویم شمسی)</label>
+              <input type="text" class="persian-datepicker-input" placeholder="انتخاب تاریخ شمسی..." style="width: 100%; padding: 0.75rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); background: var(--bg-surface-subtle); color: var(--text-main);">
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <label style="display: block; font-size: 0.9rem; margin-bottom: 0.4rem; font-weight: 500;">توضیحات یا شرح درخواست</label>
+              <textarea rows="4" placeholder="پیام خود را بنویسید..." style="width: 100%; padding: 0.75rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); background: var(--bg-surface-subtle); color: var(--text-main);"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i>
+              <span>ارسال نهایی درخواست</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info & Map placeholder -->
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div class="card">
+            <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">اطلاعات تماس مستقیم</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+              <li><i class="fas fa-map-marker-alt" style="color: var(--color-primary); margin-left: 0.5rem;"></i> تهران، منطقه ۱۹، ساختمان مرکزی اطلس شفاء آماتیس</li>
+              <li><i class="fas fa-phone-alt" style="color: var(--color-primary); margin-left: 0.5rem;"></i> ۰۲۱-۸۸۰۰۰۰۰۰</li>
+              <li><i class="fas fa-envelope" style="color: var(--color-primary); margin-left: 0.5rem;"></i> info@atlasshafaco.com</li>
+              <li><i class="fas fa-clock" style="color: var(--color-primary); margin-left: 0.5rem;"></i> شنبه تا چهارشنبه ۸:۰۰ الی ۱۸:۰۰ | پنج‌شنبه‌ها ۸:۰۰ الی ۱۴:۰۰</li>
+            </ul>
+          </div>
+
+          <div class="card" style="background: var(--bg-surface-subtle); border-style: dashed; text-align: center; padding: 2.5rem;">
+            <i class="fas fa-map-marked-alt" style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 1rem;"></i>
+            <h4>مسیریابی هوشمند</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">دسترسی آسان از طریق ایستگاه‌های مترو و بزرگراه‌های اصلی منطقه ۱۹ تهران.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container" style="text-align: center;">
+      <p>© ۲۰۲۶ وب‌سایت رسمی اطلس شفاء آماتیس (atlasshafaco.com)</p>
+    </div>
+  </footer>
+
+  <script src="assets/datepicker/jquery.min.js"></script>
+  <script src="assets/datepicker/persian-date.min.js"></script>
+  <script src="assets/datepicker/persian-datepicker.min.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

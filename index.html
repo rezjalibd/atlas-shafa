@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اطلس شفاء آماتیس | پیوند سلامت، فناوری و تولید تخصصی</title>
+  <meta name="description" content="مرکز رسمی اطلس شفاء آماتیس؛ ارائه خدمات تخصصی رادیولوژی فک و صورت، نرم‌افزارهای سلامت ای‌مطب، تولید تجهیزات پزشکی و نوآوری هوشمند در زنجیره سلامت.">
+  <meta name="keywords" content="اطلس شفاء آماتیس, رادیولوژی فک و صورت, ای مطب, دکتر سیتی, تجهیزات دندانپزشکی, سلامت هوشمند">
+  <link rel="canonical" href="https://atlasshafaco.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="اطلس شفاء آماتیس | پلتفرم سلامت، فناوری و تولید">
+  <meta property="og:description" content="اکوسیستم هوشمند سلامت، فناوری پزشکی و تولید تجهیزات استاندارد.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://atlasshafaco.com/">
+  <meta property="og:image" content="assets/images/hero_medical_bg.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="assets/logos/fava.webp">
+
+  <!-- CSS Resources -->
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/fontawesome/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/datepicker/persian-datepicker.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="nav-brand" aria-label="صفحه اصلی اطلس شفاء آماتیس">
+          <img src="assets/logos/logow.webp" alt="لوگو اطلس شفاء آماتیس" class="brand-logo logo-light">
+          <img src="assets/logos/logod.webp" alt="لوگو اطلس شفاء آماتیس" class="brand-logo logo-dark">
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link active" data-i18n="nav_home">صفحه اصلی</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link" data-i18n="nav_about">درباره ما</a></li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">
+                <span data-i18n="nav_services">خدمات درمانی</span>
+                <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="radiology.html" class="dropdown-item">
+                  <i class="fas fa-x-ray"></i>
+                  <span>رادیولوژی فک و صورت (CBCT)</span>
+                </a>
+                <a href="dental-clinic.html" class="dropdown-item">
+                  <i class="fas fa-tooth"></i>
+                  <span>کلینیک تخصصی دندان‌پزشکی</span>
+                </a>
+                <a href="lab.html" class="dropdown-item">
+                  <i class="fas fa-flask"></i>
+                  <span>آزمایشگاه و لابراتوار دقیق</span>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="tech.html" class="nav-link">
+                <span data-i18n="nav_tech">فناوری و نوآوری</span>
+                <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="ematab.html" class="dropdown-item">
+                  <i class="fas fa-laptop-medical"></i>
+                  <span>سامانه هوشمند ای‌مطب</span>
+                </a>
+                <a href="drcity.html" class="dropdown-item">
+                  <i class="fas fa-network-wired"></i>
+                  <span>پلتفرم کلینیکال دکتر سیتی</span>
+                </a>
+                <a href="ai-radiology.html" class="dropdown-item">
+                  <i class="fas fa-brain"></i>
+                  <span>هوش مصنوعی در رادیولوژی</span>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="products.html" class="nav-link" data-i18n="nav_products">محصولات و تجهیزات</a></li>
+            <li class="nav-item"><a href="certifications.html" class="nav-link" data-i18n="nav_cert">مجوزها و استانداردها</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link" data-i18n="nav_contact">تماس با ما</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button id="btnThemeToggle" class="btn-icon" aria-label="تغییر تم" title="تغییر تم">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button id="btnLangToggle" class="btn-icon" aria-label="تغییر زبان" title="تغییر زبان">
+            EN
+          </button>
+          <a href="contact.html" class="btn-cta" data-i18n="cta_consult">
+            <i class="fas fa-calendar-check"></i>
+            <span>دریافت مشاوره و نوبت</span>
+          </a>
+          <button id="mobileMenuToggle" class="btn-icon" style="display: none;" aria-label="منوی موبایل">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge" data-i18n="hero_badge">
+              <i class="fas fa-shield-alt"></i>
+              <span>اکوسیستم هوشمند سلامت و فناوری پزشکی</span>
+            </div>
+            <h1 class="hero-title" data-i18n="hero_title">
+              از تشخیص و درمان تا فناوری و تولید؛ <span>زنجیره‌ای برای آینده سلامت</span>
+            </h1>
+            <p class="hero-desc" data-i18n="hero_desc">
+              اطلس شفاء آماتیس، مجموعه‌ای چندحوزه‌ای و پیشرو در توسعه زنجیره سلامت، فناوری پزشکی، رادیولوژی تخصصی فک و صورت، نرم‌افزارهای سلامت و تولید تجهیزات پزشکی استاندارد است.
+            </p>
+            <div class="hero-actions">
+              <a href="#ecosystem" class="btn btn-primary" data-i18n="btn_explore">
+                <i class="fas fa-th-large"></i>
+                <span>آشنایی با حوزه‌ها</span>
+              </a>
+              <a href="services.html" class="btn btn-outline" data-i18n="btn_services">
+                <i class="fas fa-stethoscope"></i>
+                <span>مشاهده خدمات</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <div class="hero-image-card">
+              <img src="assets/images/hero_medical_bg.webp" alt="مرکز فرماندهی و نوآوری سلامت اطلس شفاء آماتیس" loading="eager">
+            </div>
+            <div class="hero-floating-stat">
+              <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+              <div>
+                <div class="stat-num" data-i18n="stat_sectors">۴ حوزه کلیدی</div>
+                <div class="stat-label" data-i18n="stat_desc">پوشش جامع زنجیره ارزش سلامت</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ecosystem Sectors Section -->
+    <section id="ecosystem" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">اکوسیستم فعالیت</span>
+          <h2 class="section-title">چهار بازوی یکپارچه در زنجیره ارزش سلامت</h2>
+          <p class="section-desc">پیوند هماهنگ میان تخصص بالینی، مهندسی تولید و راهکارهای نرم‌افزاری</p>
+        </div>
+
+        <div class="grid-cards">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-x-ray"></i></div>
+            <h3 class="card-title">تشخیص و درمان بالینی</h3>
+            <p class="card-desc">ارائه خدمات فوق‌تخصصی تصویربرداری فک و صورت (CBCT)، کلینیک‌های دندان‌پزشکی دیجیتال و آزمایشگاه‌های پیشرفته با استانداردهای حفاظت پرتوی.</p>
+            <div class="card-footer">
+              <span class="badge-status status-active">فعال و آماده ارائه</span>
+              <a href="radiology.html" class="btn-link">اطلاعات بیشتر <i class="fas fa-arrow-left"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3 class="card-title">فناوری و نرم‌افزارهای سلامت</h3>
+            <p class="card-desc">سامانه‌های یکپارچه مدیریت مطب و کلینیک (ای‌مطب)، پرونده الکترونیک سلامت و تحلیل‌های هوشمند تصاویر پزشکی با هوش مصنوعی بالینی.</p>
+            <div class="card-footer">
+              <span class="badge-status status-active">فعال</span>
+              <a href="ematab.html" class="btn-link">مشاهده پلتفرم <i class="fas fa-arrow-left"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-cogs"></i></div>
+            <h3 class="card-title">تولید و مهندسی تجهیزات</h3>
+            <p class="card-desc">طراحی و بومی‌سازی یونیت‌های هوشمند دندان‌پزشکی، محصولات بهداشتی سه‌بعدی نانو و طراحی خطوط تولید فرآورده‌های دارویی و تشخیصی.</p>
+            <div class="card-footer">
+              <span class="badge-status status-dev">در حال توسعه و تولید</span>
+              <a href="products.html" class="btn-link">مشاهده محصولات <i class="fas fa-arrow-left"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-handshake"></i></div>
+            <h3 class="card-title">بازرگانی و نمایندگی</h3>
+            <p class="card-desc">تأمین و توزیع تجهیزات پزشکی مصرفی، قراردادهای پشتیبانی مراکز درمانی و تعامل با مراجع معتبر علمی و صنعتی داخلی و بین‌المللی.</p>
+            <div class="card-footer">
+              <span class="badge-status status-active">فعال</span>
+              <a href="corporate.html" class="btn-link">همکاری سازمانی <i class="fas fa-arrow-left"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Technology Showcase -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">فناوری‌های تحول‌آفرین</span>
+          <h2 class="section-title">نوآوری در خدمت ارتقای دقت تشخیصی</h2>
+          <p class="section-desc">راهکارهای نرم‌افزاری و سخت‌افزاری توسعه‌یافته برای پزشکان و مراکز درمانی</p>
+        </div>
+
+        <div class="grid-cards">
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <img src="assets/images/ematab_platform.webp" alt="سامانه ای مطب" style="height: 220px; object-fit: cover;">
+            <div style="padding: 1.75rem;">
+              <span class="badge-status status-active" style="margin-bottom: 0.75rem;">پلتفرم فعال</span>
+              <h3 class="card-title">سامانه ای‌مطب (E-Matab)</h3>
+              <p class="card-desc">پلتفرم مدیریت جامع مطب، نوبت‌دهی آنلاین، بایگانی امن پرونده‌ها و ارتباط مستقیم با شبکه‌های آزمایشگاهی و رادیولوژی.</p>
+              <a href="ematab.html" class="btn btn-outline" style="width: 100%;">درخواست دمو و معرفی</a>
+            </div>
+          </div>
+
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <img src="assets/images/cbct_radiology.webp" alt="رادیولوژی CBCT" style="height: 220px; object-fit: cover;">
+            <div style="padding: 1.75rem;">
+              <span class="badge-status status-active" style="margin-bottom: 0.75rem;">تجهیزات فعال</span>
+              <h3 class="card-title">رادیولوژی فک و صورت و هوش مصنوعی</h3>
+              <p class="card-desc">سیستم تصویربرداری سه‌بعدی با دوز پرتوی حداقل و پردازش هوشمند ساختارهای استخوانی برای جراحی ایمپلنت و ارتدنسی.</p>
+              <a href="radiology.html" class="btn btn-outline" style="width: 100%;">مشاهده پروتکل‌ها</a>
+            </div>
+          </div>
+
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <img src="assets/images/smart_dental_unit.webp" alt="یونیت دندانپزشکی هوشمند" style="height: 220px; object-fit: cover;">
+            <div style="padding: 1.75rem;">
+              <span class="badge-status status-dev" style="margin-bottom: 0.75rem;">فناوری بومی</span>
+              <h3 class="card-title">یونیت هوشمند دندان‌پزشکی</h3>
+              <p class="card-desc">تلفیق ارگونومی مهندسی با حسگرهای پایش دیجیتال و سیستم‌های ضدعفونی خودکار برای راحتی حداکثری پزشک و بیمار.</p>
+              <a href="products.html" class="btn btn-outline" style="width: 100%;">بررسی مشخصات فنی</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust & Certifications Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">اصالت و اعتبار رسمی</span>
+          <h2 class="section-title">فعالیت مبتنی بر مجوزها و مراجع ذی‌صلاح</h2>
+          <p class="section-desc">تمام خدمات و محصولات مجموعه بر پایه استانداردها و تأییدیه‌های رسمی ارائه می‌شوند</p>
+        </div>
+
+        <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+          <div class="card" style="text-align: center; align-items: center;">
+            <i class="fas fa-file-contract" style="font-size: 2.25rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem;">موافقت اصولی مؤسسه رادیولوژی</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">وزارت بهداشت، درمان و آموزش پزشکی</p>
+          </div>
+          <div class="card" style="text-align: center; align-items: center;">
+            <i class="fas fa-industry" style="font-size: 2.25rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem;">پروانه تأسیس واحد تولیدی</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">وزارت صنعت، معدن و تجارت (صمت)</p>
+          </div>
+          <div class="card" style="text-align: center; align-items: center;">
+            <i class="fas fa-certificate" style="font-size: 2.25rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem;">مجوزهای غذا و دارو</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">سازمان غذا و دارو (IFDA)</p>
+          </div>
+          <div class="card" style="text-align: center; align-items: center;">
+            <i class="fas fa-lightbulb" style="font-size: 2.25rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem;">گواهی دانش‌بنیان</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">معاونت علمی و فناوری ریاست جمهوری</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="certifications.html" class="btn btn-outline">
+            <i class="fas fa-award"></i>
+            <span>مشاهده و استعلام جزئیات تمام مجوزها</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <img src="assets/logos/logod.webp" alt="اطلس شفاء آماتیس" style="height: 48px; width: auto;">
+          <p>اطلس شفاء آماتیس، مجموعه‌ای چندحوزه‌ای در حال توسعه در زنجیره سلامت، فناوری پزشکی، رادیولوژی تخصصی و تولید تجهیزات پزشکی استاندارد.</p>
+          <div style="display: flex; gap: 0.75rem; color: #94A3B8; font-size: 1.25rem;">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>حوزه‌های تخصصی</h4>
+          <ul class="footer-links">
+            <li><a href="radiology.html"><i class="fas fa-angle-left"></i> رادیولوژی فک و صورت</a></li>
+            <li><a href="dental-clinic.html"><i class="fas fa-angle-left"></i> کلینیک دندان‌پزشکی</a></li>
+            <li><a href="ematab.html"><i class="fas fa-angle-left"></i> نرم‌افزار ای‌مطب</a></li>
+            <li><a href="products.html"><i class="fas fa-angle-left"></i> تجهیزات پزشکی و یونیت</a></li>
+            <li><a href="ai-radiology.html"><i class="fas fa-angle-left"></i> هوش مصنوعی رادیولوژی</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>سازمان و همکاری</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="fas fa-angle-left"></i> درباره اطلس شفاء</a></li>
+            <li><a href="certifications.html"><i class="fas fa-angle-left"></i> مجوزها و استانداردها</a></li>
+            <li><a href="corporate.html"><i class="fas fa-angle-left"></i> همکاری سازمانی و کلینیک‌ها</a></li>
+            <li><a href="careers.html"><i class="fas fa-angle-left"></i> فرصت‌های شغلی و جذب</a></li>
+            <li><a href="privacy.html"><i class="fas fa-angle-left"></i> حریم خصوصی و امنیت داده</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>ارتباط با ما</h4>
+          <ul class="footer-links" style="gap: 0.85rem;">
+            <li><i class="fas fa-map-marker-alt"></i> تهران، منطقه ۱۹، ساختمان مرکزی</li>
+            <li><i class="fas fa-phone-alt"></i> ۰۲۱-۸۸۰۰۰۰۰۰</li>
+            <li><i class="fas fa-envelope"></i> info@atlasshafaco.com</li>
+            <li><i class="fas fa-clock"></i> شنبه تا چهارشنبه: ۸:۰۰ الی ۱۸:۰۰</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© ۲۰۲۶ تمامی حقوق مادی و معنوی متعلق به وب‌سایت «اطلس شفاء آماتیس» (atlasshafaco.com) است.</div>
+        <div>طراحی مطابق راهنمای هویت بصری اختصاصی</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Action -->
+  <div class="sticky-mobile-cta">
+    <a href="contact.html" class="btn btn-primary" style="flex: 1;">
+      <i class="fas fa-calendar-alt"></i>
+      <span>نوبت‌دهی و مشاوره</span>
+    </a>
+    <a href="tel:02188000000" class="btn-icon" aria-label="تماس تلفنی">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" class="cookie-banner hidden">
+    <h4 style="font-size: 1rem;" data-i18n="cookie_title">حریم خصوصی و کوکی‌ها</h4>
+    <p style="font-size: 0.88rem; color: var(--text-muted);" data-i18n="cookie_desc">این وب‌سایت جهت ارائه تجربه کاربری بهینه و ثبت تنظیمات تم از کوکی‌های استاندارد استفاده می‌کند.</p>
+    <div style="display: flex; gap: 0.75rem;">
+      <button id="btnAcceptCookie" class="btn btn-primary" style="padding: 0.4rem 1rem; font-size: 0.85rem;" data-i18n="cookie_accept">پذیرش همه</button>
+      <button id="btnDeclineCookie" class="btn btn-outline" style="padding: 0.4rem 1rem; font-size: 0.85rem;" data-i18n="cookie_decline">رد کردن</button>
+    </div>
+  </div>
+
+  <!-- JS Libraries -->
+  <script src="assets/datepicker/jquery.min.js"></script>
+  <script src="assets/datepicker/persian-date.min.js"></script>
+  <script src="assets/datepicker/persian-datepicker.min.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
